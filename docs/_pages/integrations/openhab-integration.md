@@ -53,7 +53,8 @@ Homie must also be enabled in Valetudo.
 5. Now navigate to "Model"
    {% include alert.html type="tip" content="If you haven't configured your semantic model, you should probably give it
    a shot, it simplifies setting up devices by orders of
-   magnitude. [Docs](https://www.openhab.org/docs/tutorial/model.html)." %}
+   magnitude. [Docs](https://www.openhab.org/docs/tutorial/model.html).
+   " %}
 6. Select the room you want to add your robot to, then click "Create Equipment from Thing" and select your newly created
    Valetudo Homie thing. Fill in the name, etc, then scroll towards the bottom before saving.
 7. Enable and configure the channels you want to import from the vacuum. You don't have to select all of them, and you
@@ -84,7 +85,7 @@ Homie must also be enabled in Valetudo.
    | Clean segments | String    |              | None           | None              | Optional     |
    | Locate         | String    |              | Point          | None              | Optional     |
    | Map            | String    |              | None           | None              | Change item to image type |
-   | Map segments   | String    |              | None           | None              | Optional     |
+   | Map segments   | String    |              | None           | None              | Optional     | 
 
    {% include alert.html type="tip" content="If you need to add more channels later you can always select your vacuum
    from the semantic model, then click \"Create Points from Thing\".
@@ -135,8 +136,7 @@ To relink them:
 
 ## Setting custom options, friendly names and order
 
-You will likely notice that options for fan speed and water grade are all lowercase and in a random order. Also, you
-will see that Clean segments does not have any options.
+You will likely notice that options for fan speed and water grade are all lowercase and in a random order. 
 
 This is easy to fix from settings.
 
@@ -153,12 +153,3 @@ This is easy to fix from settings.
    max=Max
    ```
    
-   For "Clean segments":
-
-   ```
-   10=Kitchen
-   17=Living room
-   11=Bathroom
-   13=Bedroom
-   ```
-
